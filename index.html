@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Reinaerd Vandewalle" />
+    <title>Howest Trajectbuilder</title>
+    <link rel="stylesheet" href="assets/css/reset.css"/>
+    <link rel="stylesheet" href="assets/css/screen.css"/>
+
+</head>
+<body>
+<header>
+    <div class="title-text">
+        <h1>Howest curriculum builder</h1>
+        <h2>Create your individual curriculum</h2>
+    </div>
+</header>
+<img src="images/howest.jpg" title="Howest" alt="HOWEST"/>
+<main>
+    <div class="mainBody">
+        <section class="curriculum">
+        <article>
+            <h2 class="curriculum">Curriculum builder: the tool for tailored curricula</h2>
+            <p>Studying for a Bachelor's degree can be tough. Not everyone commences studies with the same background, whilst others
+                combine it with a (full-time) job. In order to service all students from all backgrounds, we enable them to <strong>create
+                    a tailor-made curriculum</strong> that suits their needs.</p>
+
+            <p>Curricula have to fit like a glove. Study too light, <strong>boredom and disinterest</strong> will set in. Take on a
+                too loaded approach and you'll <strong>succomb to the insurmountable pressure.</strong> It is important that each
+                semester is balanced.</p>
+
+            <p>This tool allows you to take your pick from available courses and construct a schedule that does not only fit your
+                needs, but <a href="#" title="Sometimes you need to complete course A before being able to take on course B. These rules are built into the system"><mark>respects the order</mark></a> in which certain topics need to be processed. You may take longer or
+                shorter than a <a href="#" title="Standard students are students who follow a model trajectory laid out by the academy itself"><mark>standard student</mark></a> depending on your constructed curriculum, but at least you'll be
+                happy</p>
+
+            <p>Go ahead and get started!</p>
+            <ul>
+                <li><a href="#personal-data" class="data_button" data-vissible=".personal-data" data-section=".curriculum">Enter personal data</a></li>
+            </ul>
+        </article>
+        </section>
+        <section id="personal-data" class="nietzichtbaar">
+        <h2 class="personal-data">Enter personal data</h2>
+        <p>In order to serve you correctly, we need to know some basic information first</p>
+        <form method="post" action="#">
+            <label for="name" >name</label>
+            <input type="text" name="name" id="name" required/>
+            <label for="email" >email</label>
+            <input type="email" name="email" id="email" required/>
+            <label for="ECTS">ECTS available for allocation</label>
+            <input type="number" name="ECTS" id="ECTS" min="0" max="140"/>
+            <input type="submit" name="configurecourse" id="submitje" value="Configure completed courses &gt;" class="data_button" data-vissible=".completedcourses" data-section=".personal-data" data-target="completedcourses"/>
+        </form>
+        </section>
+        <section id="completedcourses" class="nietzichtbaar">
+            <h2 class="completedcourses">Select the courses you have already completed</h2>
+            <p>Selecting the courses that have already been completed will <strong>enable us to correctly fill out prerequisite
+                knowledge</strong> for follow-up courses. If you haven't completed any courses yet, your selection will be limited
+                to courses from the first and second semester.</p>
+            <form method="post" action="#">
+                <ol>
+                    <li class="activeersem"><a data-target="S1" href="#">S1</a></li>
+                    <li class="activeersem"><a data-target="S2" href="#">S2</a></li>
+                    <li class="activeersem"><a data-target="S3" href="#">S3</a></li>
+                    <li class="activeersem"><a data-target="S4" href="#">S4</a></li>
+                    <li class="activeersem"><a data-target="S5" href="#">S5</a></li>
+                    <li class="activeersem"><a data-target="S6" href="#">S6</a></li>
+                </ol>
+                <div class="vis">
+                    <p>visible semesters</p>
+
+                    <div>
+                        <select id="sortby" name="sortby">
+                            <option value="ascending">Ascending</option>
+                            <option value="descending">Descending</option>
+                        </select>
+                        <label for="sortby">sort courses</label>
+                    </div>
+                </div>
+
+            </form>
+            <form class="course" id="comp">
+                <div>
+                    <h2>Software development 1</h2>
+                    <div class="green"></div>
+                    <p>6ECTS</p>
+                    <h3>Mattias De Wael</h3>
+                    <button type="button" class="completed-button">Completed</button>
+                </div>
+
+                <div>
+                    <h2>Software development 1</h2>
+                    <div class="green"></div>
+                    <p>6ECTS</p>
+                    <h3>Mattias De Wael</h3>
+                    <button type="button" class="completed-button">Completed</button>
+                </div>
+
+                <div>
+                    <h2>Software development 1</h2>
+                    <div class="green"></div>
+                    <p>6ECTS</p>
+                    <h3>Mattias De Wael</h3>
+                    <button type="button" class="completed-button">Completed</button>
+                </div>
+
+                <div>
+
+                    <h2>Software development 1</h2>
+                    <div class="green"></div>
+                    <h3>Mattias De Wael</h3>
+                    <p>6ECTS</p>
+                    <button type="button" class="completed-button">Completed</button>
+                </div>
+
+
+
+                <div>
+                    <h2>Software development 1</h2>
+                    <div class="green"></div>
+                    <h3>Mattias De Wael</h3>
+                    <p>6ECTS</p>
+                    <button type="button" class="completed-button">Completed</button>
+                </div>
+
+                <div>
+                    <h2>Software development 1</h2>
+                    <div class="green"></div>
+                    <h3>Mattias De Wael</h3>
+                    <p>6ECTS</p>
+                    <button type="button" class="completed-button">Completed</button>
+                </div>
+
+                <div>
+                    <h2>Software development 1</h2>
+                    <div class="green"></div>
+                    <h3>Mattias De Wael</h3>
+                    <p>6ECTS</p>
+                    <button type="button" class="completed-button">Completed</button>
+                </div>
+
+            </form>
+            <nav>
+                <ul>
+                    <li><a href="#personal-data"  class="data_button" data-vissible=".personal-data" data-section=".completedcourses" >&lt; Modify personal data</a></li>
+                    <li><a href="#courseCurriculum"  class="data_button" data-vissible=".courseCurriculum" data-section=".completedcourses">Configure course curriculum &gt;</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section id="courseCurriculum" class="nietzichtbaar">
+        <h2 class="courseCurriculum">Configure course curriculum</h2>
+        <p>Select the courses you want to include in your curriculum next academic year</p>
+        <form method="post" action="#">
+            <ol>
+                <li class="activeersem"><a data-target="S1" href="#">S1</a></li>
+                <li class="activeersem"><a data-target="S2" href="#">S2</a></li>
+                <li class="activeersem"><a data-target="S3" href="#">S3</a></li>
+                <li class="activeersem"><a data-target="S4" href="#">S4</a></li>
+                <li class="activeersem"><a data-target="S5" href="#">S5</a></li>
+                <li class="activeersem"><a data-target="S6" href="#">S6</a></li>
+            </ol>
+            <div class="vis">
+                <p>visible semesters</p>
+
+                <div>
+                    <select id="sorteer" name="sorteer">
+                        <option value="oplopend">Ascending</option>
+                        <option value="aflopend">Descending</option>
+                    </select>
+                    <label for="sorteer">sort courses</label>
+                </div>
+            </div>
+        </form>
+        <form class="course" id="take">
+            <div>
+                <h2>Software development 1</h2>
+                <div class="green"></div>
+                <p>6ECTS</p>
+                <h3>Mattias De Wael</h3>
+                <button type="button" class="completed-button">Take course</button>
+            </div>
+
+            <div>
+                <h2>Software development 1</h2>
+                <div class="green"></div>
+                <p>6ECTS</p>
+                <h3>Mattias De Wael</h3>
+                <button type="button" class="completed-button">Take course</button>
+            </div>
+
+            <div>
+                <h2>Software development 1</h2>
+                <div class="green"></div>
+                <p>6ECTS</p>
+                <h3>Mattias De Wael</h3>
+                <button type="button" class="completed-button">Take course</button>
+            </div>
+
+            <div>
+                <h2>Web Development</h2>
+                <div class="green"></div>
+                <h3>Mattias De Wael</h3>
+                <p>6ECTS</p>
+                <button type="button" class="completed-button">Take course</button>
+            </div>
+
+            <div>
+                <h2>Databases</h2>
+                <div class="green"></div>
+                <h3>Mattias De Wael</h3>
+                <p>6ECTS</p>
+                <button type="button" class="completed-button">Take course</button>
+            </div>
+
+            <div>
+                <h2>Project II: Analysis and development project</h2>
+                <div class="green"></div>
+                <h3>Mattias De Wael</h3>
+                <p>6ECTS</p>
+                <button type="button" class="completed-button">Take course</button>
+            </div>
+
+            <div>
+                <h2>Software development 1</h2>
+                <div class="green"></div>
+                <h3>Mattias De Wael</h3>
+                <p>6ECTS</p>
+                <button type="button" class="completed-button">Take course</button>
+            </div>
+
+        </form>
+        <nav>
+            <ul class="data_button">
+                <li><a href="#completedcourses"  class="data_button" data-vissible=".completedcourses" data-section=".courseCurriculum">&lt; Modify completed courses</a></li>
+                <li><a href="#overview"  id="over" class="data_button" data-vissible=".overview" data-section=".courseCurriculum">Choice overview &gt; </a></li>
+            </ul>
+        </nav>
+        </section>
+        <section id="overview" class="nietzichtbaar">
+            <h2>Choice overview</h2>
+
+            <p>Carefully study the table below and double check if the completed courses and desired courses check out. Once your
+                application has been submitted, there is no turning back!</p>
+            <div class="ects">
+                <ul class="ects">
+                    <li>Completed ECTS<p id="bluet">60</p></li>
+
+                </ul>
+
+                <ul>
+                    <li>Desired ECTS<p id="pinkt">34</p></li>
+
+                </ul>
+            </div>
+            <table>
+                <tr>
+                    <th colspan="3">completed courses</th>
+                    <th colspan="3">desired courses</th>
+                </tr>
+                <tbody class="tbody">
+                <tr>
+                    <th>semester</th>
+                    <th>module</th>
+                    <th># SP</th>
+                    <th>semester</th>
+                    <th>module</th>
+                    <th># SP</th>
+                </tr>
+                </tbody>
+            </table>
+            <nav>
+                <ul>
+                    <li><a href="#courseCurriculum"  class="data_button" data-vissible=".courseCurriculum" data-section=".overview">&lt; Modify desired courses</a></li>
+                    <li><a href="#submission"  class="data_button" data-vissible=".submission" data-section=".overview">Submit curriculum &gt;</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section id="submission" class="nietzichtbaar">
+            <h2 class="submission">Thank you for your submission!</h2>
+            <p>Thank you for submitting your curriculum. The course counsellor will be in touch shortly.</p>
+        </section>
+    </div>
+    <div class="aside">
+        <aside>
+        </aside>
+    </div>
+</main>
+<footer>
+    <p>All images courtesy of font awesome and flaticon</p>
+</footer>
+
+<script src="assets/js/data/modules.js"></script>
+<script src="assets/js/script.js"></script>
+
+<script src="assets/js/quickview.js"></script>
+
+<script src="assets/js/personal-data.js"></script>
+<script src="assets/js/overviews.js"></script>
+<script src="assets/js/summary.js"></script>
+
+<script src="assets/js/filter-and-sort.js"></script>
+</body>
+</html>

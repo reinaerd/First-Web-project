@@ -1,0 +1,623 @@
+/***************/
+/* Google font */
+/***************/
+
+@font-face {
+    font-family: VagRounded;
+    src: url("../fonts/vagroundedstd-bold-webfont.woff");
+}
+
+/********************/
+/* Gradient classes */
+/********************/
+
+
+
+.course div.green {
+    background: linear-gradient(135deg, rgba(210, 255, 82, 1) 0%, rgba(210, 255, 82, 1) 24%, rgba(145, 232, 66, 1) 100%);
+    padding-top: 25%;
+    padding-bottom: 25%;
+    margin: 0 10px 10px 10px;
+    width: 90%;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-family: VagRounded, sans-serif;
+    color: #a39e9e;
+    font-weight: bold;
+}
+
+.course div.yellow {
+    background: linear-gradient(135deg, rgba(241, 231, 103, 1) 0%, rgba(254, 182, 69, 1) 100%);
+    padding-top: 25%;
+    padding-bottom: 25%;
+    margin: 0 10px 10px 10px;
+    width: 90%;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-family: VagRounded, sans-serif;
+    color: #a39e9e;
+    font-weight: bold;
+}
+
+.course div.pink {
+    background: linear-gradient(135deg, rgba(250, 160, 236, 1) 0%, rgba(242, 61, 148, 1) 100%);
+    padding-top: 25%;
+    padding-bottom: 25%;
+    margin: 0 10px 10px 10px;
+    width: 90%;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-family: VagRounded, sans-serif;
+    color: #a39e9e;
+    font-weight: bold;
+}
+
+.course div.orange {
+    background: linear-gradient(135deg, rgba(250, 245, 160, 1) 0%, rgba(219, 85, 37, 1) 100%);
+    padding-top: 25%;
+    padding-bottom: 25%;
+    margin: 0 10px 10px 10px;
+    width: 90%;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-family: VagRounded, sans-serif;
+    color: #a39e9e;
+    font-weight: bold;
+}
+
+.course div.blue {
+    background: linear-gradient(135deg, rgba(160, 193, 250, 1) 0%, rgba(40, 217, 240, 1) 100%);
+    padding-top: 25%;
+    padding-bottom: 25%;
+    margin: 0 10px 10px 10px;
+    width: 90%;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-family: VagRounded, sans-serif;
+    color: #a39e9e;
+    font-weight: bold;
+}
+
+.course div.purple {
+    background: linear-gradient(135deg, rgba(235, 233, 249, 1) 0%, rgba(193, 191, 234, 1) 100%);
+    padding-top: 25%;
+    padding-bottom: 25%;
+    margin: 0 10px 10px 10px;
+    width: 90%;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-family: VagRounded, sans-serif;
+    color: #a39e9e;
+    font-weight: bold;
+}
+
+.course div.white {
+    background: linear-gradient(135deg, rgba(204,249,251,1) 0%, rgba(255,255,255,1) 100%);
+    padding-top: 25%;
+    padding-bottom: 25%;
+    margin: 0 10px 10px 10px;
+    width: 90%;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-family: VagRounded, sans-serif;
+    color: #a39e9e;
+    font-weight: bold;
+}
+
+/********************/
+/* algemene styling */
+/********************/
+
+body{
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.1rem;
+}
+
+/******************/
+/* Header styling */
+/******************/
+
+header h1{
+    font-size: 2rem;
+    font-weight: bold;
+    color:#44c8f5;
+}
+
+header h2{
+    font-size: 1rem;
+    color: rgba(255,255,255,0.7);
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+header{
+    padding: 2% 1% 2% 1%;
+    background-color: rgba(30, 35, 39, 0.9);
+}
+
+img{
+    margin-bottom: 2%;
+    width:100%
+}
+
+/****************/
+/* main styling */
+/****************/
+
+main h2{
+    font-size: 2rem;
+    padding-left: 40px;
+    font-weight: bold;
+}
+
+.mainBody a:first-of-type, .mainBody a:nth-of-type(2){
+    text-decoration: none;
+}
+
+.mainBody p{
+    margin-bottom: 0.8rem;
+    color: #a39e9e;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainBody{
+    width: 80%;
+    margin-right: 3rem;
+    padding-left: 3%;
+}
+
+mark{
+    background-color: #f5f2b6;
+}
+mark:hover{
+    background-color: rgba(60,200,245,0.3);
+}
+
+/*************************/
+/* personal-data styling */
+/*************************/
+
+h2.personal-data{
+    background-image: url("../media/personal-data.svg");
+    background-repeat: no-repeat;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.personal-data{
+    font-size: 1.5rem;
+}
+
+/****************************/
+/* completedcourses styling */
+/****************************/
+h2.completedcourses{
+    background-image: url("../media/completed-courses.svg");
+    background-repeat: no-repeat;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+section.nietzichtbaar{
+    display: none;
+}
+
+/*************************/
+/* courses styling */
+/*************************/
+
+.course h2{
+    font-size: 1.2rem;
+}
+
+.course div{
+    text-align: center;
+    width: 30%;
+    padding: 1rem;
+    display:inline-block;
+    justify-content: center;
+    border-radius: 0.8rem;
+}
+
+.course div:nth-of-type(even){
+    background-color: rgba(60,200,245,0.1);
+}
+
+.course div:nth-of-type(odd){
+    background-color: rgba(232,241,244,0.4);
+}
+
+form .course{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.course p{
+    border: dotted black;
+    border-radius: 52%;
+    padding: 10px;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+/****************************/
+/* courseCurriculum styling */
+/****************************/
+
+h2.courseCurriculum {
+    background-image: url("../media/new-courses.svg");
+    background-repeat: no-repeat;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+/***************************/
+/* choice overview styling */
+/***************************/
+
+.overview h2{
+    background-image: url("../media/overview.svg");
+    background-repeat: no-repeat;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+div.ects{
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    font-family: VagRounded, sans-serif;
+    color: #514d50;
+    background-image: url(../media/arrow.svg);
+    background-repeat: no-repeat;
+    background-size: 15%;
+    background-position: center 10px;
+}
+
+#bluet{
+    color: #44c8f5;
+    font-size: 3rem;
+}
+
+#pinkt{
+    color: #ec008c;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/*************************/
+/* table styling */
+/*************************/
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+
+thead, tr:last-of-type{
+    font-weight: bold;
+}
+
+tr:first-of-type th:first-child{
+    color: #514d50;
+    background-color: rgba(60,200,245,0.3);
+}
+
+tr:first-of-type th:nth-child(even){
+    background-color: #ec008c;
+    color: white;
+}
+
+table th, table td{
+    padding: 12px;
+    text-align: center;
+    color: #514d50;
+}
+
+table tr:nth-of-type(2) th:nth-of-type(-n+3){
+    background-color: rgba(60,200,245,0.3);
+    color: #514d50;
+}
+table tr:nth-of-type(3) td:nth-of-type(-n+3){
+    background-color: rgba(60,200,245,0.1);
+}
+
+table tr:nth-of-type(4) td:nth-of-type(-n+3){
+    background-color: rgba(60,200,245,0.2);
+}
+
+table tr:nth-of-type(5) td:nth-of-type(-n+3){
+    background-color: rgba(60,200,245,0.1);
+}
+
+table tr:nth-of-type(6) td:nth-of-type(-n+3){
+    background-color: rgba(60,200,245,0.2);
+}
+
+
+table tr:nth-of-type(4) td{
+    background-color: rgba(236,0,140,0.1);
+}
+
+table tr:nth-of-type(6) td{
+    background-color: rgba(236,0,140,0.1);
+}
+
+table tr:last-of-type th:nth-of-type(-n+3) {
+    background-color: rgba(60, 200, 245, 0.3);
+    color: #514d50;
+}
+
+table tr th{
+    background-color: #ec008c;
+    color: white;
+}
+
+
+/******************/
+/* thanks styling */
+/******************/
+
+h2.submission{
+    background-image: url("../media/thank-you.svg");
+    background-repeat: no-repeat;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+/****************/
+/* aside styling*/
+/****************/
+
+.aside{
+    width: 12%;
+    background-color: #44c8f5;
+    border: transparent;
+    border-top-left-radius: 3rem;
+    border-bottom-left-radius: 3rem;
+    margin-bottom: 3%;
+    color: white;
+    text-align: center;
+}
+
+.aside p{
+    font-size: 0.9rem;
+}
+.aside h3{
+    font-family: VagRounded, sans-serif;
+    font-weight: bold;
+    margin-top: 1rem;
+    color: white;
+}
+
+.aside p:first-of-type{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 1.5rem;
+}
+
+.aside p:nth-of-type(2){
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.aside p:nth-of-type(4){
+    font-size: 0.7rem;
+    margin-bottom: 1.5rem;
+}
+
+.black{
+    background-color: black;
+    height: 20px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.progress{
+    background: linear-gradient(135deg, rgba(241, 231, 103, 1) 0%, rgba(254, 182, 69, 1) 100%);
+    width: 50%;
+    height: 20px;
+}
+
+/******************/
+/* button styling */
+/******************/
+
+button{
+    font-family: VagRounded, sans-serif;
+}
+
+button{
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    padding: 7px 90px;
+    background-color: #44c8f5;
+}
+
+
+
+li.data_button, a.data_button, input.data_button{
+    background-color: #44c8f5;
+    color: white;
+    border: transparent;
+    font-family: VagRounded, sans-serif;
+    display: inline-flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 15px 0;
+    text-decoration: none;
+}
+
+.data_button a{
+    text-decoration: none;
+    color: white;
+    font-family: VagRounded, sans-serif;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*****************/
+/* footer styling*/
+/*****************/
+
+footer{
+    width: 100%;
+    clear: both;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: VagRounded, sans-serif;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+}
+
+
+/********************/
+/* HTML-rest styling*/
+/********************/
+
+h1, h2{
+    font-family: VagRounded, sans-serif;
+}
+
+form:nth-of-type(2) h2{
+    color: #a39e9e;
+}
+
+ h3{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #a39e9e;
+}
+
+strong{
+    font-weight: bold;
+}
+
+.title-text{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    vertical-align: center;
+}
+
+.class p{
+    border: black dotted ;
+    border-radius: 0.8rem;
+    width: 30%;
+}
+
+div.vis{
+    margin-top: 1rem;
+    display:flex;
+    justify-content: space-between;
+}
+
+h2.curriculum{
+    background-image: url("../media/curriculum.svg");
+    background-repeat: no-repeat;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+form ol li{
+    display: inline-block;
+    color: #a39e9e;
+}
+
+
+
+
+
+input[type=text],
+input[type=number],
+input[type=email]{
+    width: 100%;
+    color: #a39e9e;
+    height: 50px;
+    background-color: #f8f4f4;
+    border: none;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    font-family: Howestfont, sans-serif;
+}
+
+input[type=number]{
+    width: 21%;
+}
+input[type=email]:focus,
+input[type=number]:focus,
+input[type=text]:focus {
+    color: white;
+    background-color: #a39e9e;
+    outline: none;
+}
+
+input, label{
+    display: block;
+    color: #514d50;
+}
+
+
+
+.compbutton{
+    background-color: #ec008c;
+    background-image: url("../media/check-white.svg");
+    background-repeat: no-repeat;
+    background-size: 2rem;
+    background-position-y: center;
+    border: none
+}
+.check{
+    text-decoration: none;
+    background-color: #f8f4f4;
+    padding: 7px;
+    margin: 10px 10px 0 0;
+    color: #514d50;
+    font-family: VagRounded, sans-serif;
+}
+form ol li{
+    background-image: url("../media/check.svg");
+    background-repeat: no-repeat;
+    background-position: 5px 0;
+    background-size: 1.5rem;
+    padding-top: 30px;
+}
+ol li a{
+    background-color: #60cf60;
+    color: white;
+    text-decoration: none;
+    padding: 7px;
+    margin: 10px 10px 0 0;
+    font-family: VagRounded, sans-serif;
+}
+.filter{
+    background-image: url("../media/check-white.svg");
+    background-repeat: no-repeat;
+    background-position: 5px 0;
+    background-size: 1.5rem;
+    padding-top: 30px;
+}
